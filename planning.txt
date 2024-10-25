@@ -1,7 +1,11 @@
-- Grid de 16 x 16 cuadrados que servirán como píxeles a pintar. Hacerlo mediante métodos de Javascript. No utilizar Grid, utilizar Flexbox obligatorio.
+- Grid de 16 x 16 cuadrados que servirán como píxeles a pintar. Hacerlo mediante métodos de Javascript. 
+No utilizar Grid, utilizar Flexbox obligatorio.
 
 - Al hacer 'hover' por los cuadrados, el color de los "píxeles" irá cambiando. 
 
 - Debe haber un botón en la parte alta que pregunte por la cantidad de píxeles. 
 
-- Extra: El cambiar el color de forma aleatoria en cada "píxel" es un crédito extra, no es totalmente obligatorio, pero estaría bien lograrlo. Aparte, que este es más complicado, también es un extra hacer que por cada vez que se pase el ratón por un cuadrado, ESE cuadrado se oscurezca un 10% hasta conseguir que en 10 interacciones por ESE cuadrado se vuelva absolutamente negro.
+- Extra: El cambiar el color de forma aleatoria en cada "píxel" es un crédito extra, 
+no es totalmente obligatorio, pero estaría bien lograrlo. Aparte, que este es más complicado, 
+también es un extra hacer que por cada vez que se pase el ratón por un cuadrado, 
+ESE cuadrado se oscurezca un 10% hasta conseguir que en 10 interacciones por ESE cuadrado se vuelva absolutamente negro.
