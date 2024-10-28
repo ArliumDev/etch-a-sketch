@@ -7,12 +7,10 @@ let pixel;
 const defaultCount = 16;
 const maxCount = 100;
 
-
-
 // TODO: Change loop value to pixelCount
 
 /* Creates a 'n' numbers of columns to stock the pixels,
-   and then creates the pixels in every column */ 
+   and then creates the pixels in every column */
 
 const createDefaultBoard = () => {
   for (let i = 0; i < defaultCount; i++) {
@@ -24,20 +22,30 @@ const createDefaultBoard = () => {
       pixel.classList.add('pixel');
       pixelColumn.appendChild(pixel);
     }
-    boardContainer.appendChild(pixelColumn); 
+    boardContainer.appendChild(pixelColumn);
   }
 };
 
 /* Throws a random RGB color that will be used to paint */
 
 const randomColor = (e) => {
-  const r = Math.floor(Math.random() *  256);
-  const g = Math.floor(Math.random() *  256);
-  const b = Math.floor(Math.random() *  256);
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
   // return `rgb(${r},${g},${b})`;
   e.target.style.backgroundColor = `rgb(${r},${g},${b})`;
-}
+};
+
+/* Cleans the board */
+
+clearButton.addEventListener('click', () => {
+  console.log(pixel);
+  const pixels = document.querySelectorAll('.pixel');
+  pixels.forEach((pixel) => {
+    pixel.style.backgroundColor = '#fff';
+  })
+});
 
 createDefaultBoard();
 
-console.log(pixel);
+/* Project unfinished but in functional state */
